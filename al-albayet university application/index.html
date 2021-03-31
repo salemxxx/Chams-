@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>al-albayet university</title>
+        <link href="al-albayetCSS.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    </head>
+    
+    <body>
+        <div class="containerBox" style="height: 150px">
+            <div class="text-box">
+                <h4> <hr style="color: gray">Application for university of AL-Albayet<hr> </h4>
+            </div>
+            <img class="img-responsive" src="main.jpg" alt="al-albayet of university"/>
+        </div>
+        <div id="navbar">
+            <a href="https://www.aabu.edu.jo/EN/Pages/default.aspx" target="_blank">Home</a>
+            <a href="Acadimics">Acadimics</a>
+            <a href="Centers">Centers</a>
+            <a href="Admission">Admission</a>
+            <a href="Research">Research</a>
+            <a href="Library">Library</a>
+            <a href="About">About</a>
+            <script>
+                window.onscroll = function() {myFunction()};
+                var navbar = document.getElementById("navbar");
+                var sticky = navbar.offsetTop;
+                function myFunction() {
+                    if (window.pageYOffset >= sticky) {
+                        navbar.classList.add("sticky")
+                    } 
+                    else {
+                        navbar.classList.remove("sticky");
+                    }
+                }
+            </script>
+        </div>
+        <br>
+        <div style="width: 100%">
+            <hr>
+            </div>
+        <br><br>
+        <div class="containerBoxPersonalInformation">
+            <article>
+                <h3>Personal Information</h3>
+                <div>
+                    <form>
+                        <ul>
+                            <li class="form-row">
+                                <label for="First Name">First Name: </label>
+                                <input type="text" id="First Name">
+                            </li>
+                            <li class="form-row">
+                                <label for="Last Name">Last Name</label>
+                                <input type="text" id="Last Name">
+                            </li>
+                            <li class="form-row">
+                                <label for="User Name">User Name</label>
+                                <input type="text" id="User Name">
+                            </li>
+                            <li class="form-row">
+                                <label for="email">Email</label>
+                                <input type="email" id="email">
+                            </li>
+                            <li class="form-row">
+                                <label for="Rewrite your email">Rewrite your email:</label>
+                                <input type="email" id="Rewrite your email">
+                            </li>
+                            <li class="form-row">
+                                <label for="Password">Password: </label>
+                                <input type="password" id="Password">
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </article>
+            <div class="image">
+                <img src="profile.jpg" alt="Personal Information" width="190px">
+            </div>
+        </div>
+        <section>
+            <div class="containerBoxPersonalInformation">
+                <div>
+                    <h3>Education</h3>
+                    <form>
+                        <ul>
+                            <li class="form-row">
+                                <label for="University">University:</label>
+                                <input type="text" id="University">
+                            </li>
+                            <li class="form-row">
+                                <label for="Country">Country:</label>
+                                <input type="text" id="Country">
+                            </li>
+                            <strong>Graduation Status </strong>
+                            <br>
+                            <input type="radio" id="Graduation" name="Graduation Status" value="Graduation">
+                            <label for="Graduation">Graduation</label><br>
+                            <input type="radio" id="NotGraduation" name="Graduation Status" value="NotGraduation">
+                            <label for="NotGraduation">NotGraduation</label><br><br>
+                            <li class="form-row">
+                                <label for="degree">Degree</label>
+                                <input list="degrees" name="degree" id="degree">
+                                <datalist id="degrees">
+                                    <option value="high school">
+                                    <option value="bachelor">
+                                    <option value="Master">
+                                    <option value="Ph.D">
+                                </datalist>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <div class="image">
+                    <img src="edu.jpg" alt="education" width="190px">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="containerBoxPersonalInformation">
+                <div>
+                    <h3>Skills</h3>
+                </div>
+                <div class="form-colm">
+                    <form style="padding-left:0px;">
+                        <input type="checkbox" id="" name="Skills" value="c++">
+                        <label for="Skills"> C++</label><br>
+                        <input type="checkbox" id="" name="Skills" value="java">
+                        <label for="Skills">Java</label><br>
+                        <input type="checkbox" id="" name="Skills" value="python">
+                        <label for="Skills">Python</label><br>
+                    </form>
+                    <form style="padding-left: 100px;">
+                        <input type="checkbox" id="" name="Skills" value="c#">
+                        <label for="Skills"> C#</label><br>
+                        <input type="checkbox" id="" name="Skills" value="js">
+                        <label for="Skills">js</label><br>
+                        <input type="checkbox" id="" name="Skills" value="ruby">
+                        <label for="Skills">Ruby</label><br>
+                    </form>
+                    <form style="padding-left: 150px;">
+                        <input type="checkbox" id="" name="Skills" value="machine learning">
+                        <label for="Skills">machine learning</label><br>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <p>salem<br>samir<br>saadah</p>
+        <p>.<br>..<br>..<br>..<br>..<br>..<br>..<br>..<br>..<br>..<br>..<br>..<br>..<br>..<br>..<br>..<br>..<br>..<br>..<br>..<br>..<br>..<br>..<br>..<br>..<br>..<br>..<br>..<br>..<br>..<br>..<br>..<br>..<br>..<br></p>
+        <footer>
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, sed. Ea ipsum
+      similique quasi rem, fugiat voluptatibus reiciendis nam debitis earum quo veniam
+      laudantium mollitia atque! Laborum ea nam doloribus.</p>
+            <a href="al-albayet.edu.jo">al-albayet<samp style="color: green;">.edu.jo</samp></a>
+        </footer>
+    </body>
+</html>
