@@ -9,16 +9,16 @@ body{
     justify-items: center;
 }
 
-.containerBoxPersonalInformation{
+.container{
     position:relative;
     display: flex;
-    padding: 1.8em;
     left: 25%;
     background-color: snow;
     height: auto;
     width: 50%;
     margin-bottom: 10px;
     box-shadow:  0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index:1;
 }
 
 .text-box{
@@ -60,6 +60,7 @@ img{
     margin-left: 20%;
     margin-right: 20%;
     box-shadow:  0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 2;
 }
 
 #navbar a{
@@ -109,15 +110,15 @@ img{
     display: flex;
     flex-direction: column;
     margin-top: 50px;
-    margin-left: 60px;
+    margin-left: 30px;
   }
 
 .form-colm{
     display: flex;
     justify-content:space-between;
     padding-top: 50px;
-    padding-bottom: 30px;
     border-right: 10px;
+    border-right-color: black;
 }
 
 footer{
@@ -144,4 +145,8 @@ footer a:link{
 
 footer a:hover{
     color:green;
+}
+
+.data{
+    white-space: pre;
 }
