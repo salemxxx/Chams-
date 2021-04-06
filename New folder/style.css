@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.grid{
+    display:grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: 0.5fr repeat(3, 1fr);
+    grid-template-rows: 0.5fr 2fr repeat(3, 1fr) 0.5fr;
+    grid-template-areas:
+     "header header header header"
+     "hero hero hero hero"
+     "menuu main main main"
+     "menuu main main main"
+     "menuu banner banner banner"
+     "menuu foot foot extra";
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    
+}
+   
+
+.header{
+    grid-area: header;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+     grid-area: menuu;
+     background-color: red;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.hero{
+     grid-area: hero;
+     background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+     grid-area: main;
+     background-color: darkslateblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner{grid-area: banner;
+    background-color: yellow;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.extra{
+    grid-area: extra;
+    background-color: aqua;
+}
+.foot{
+    grid-area: foot;
+    background-color: gray;
+}
